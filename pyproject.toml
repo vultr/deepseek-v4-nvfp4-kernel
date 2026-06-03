@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepseek-v4-nvfp4-kernel"
+version = "0.1.0"
+description = "NVFP4 inference kernel for DeepSeek-V4-Pro on NVIDIA Blackwell"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dsv4*"]
